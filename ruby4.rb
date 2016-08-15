@@ -16,13 +16,5 @@ def getword(str, c)
       leng=c
     end
   end
-  result
+return result
 end
-<<<<<<< HEAD
-=======
-<<<<<<< cdfd12e044b8ddb133b12d731c6a5065b6cc0016
-=======
-
-print getword("qewe rweg we aef akvw erge rg", 15)
->>>>>>> add the second third and forth homework
->>>>>>> 13b0014
