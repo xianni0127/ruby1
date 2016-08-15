@@ -1,3 +1,7 @@
+<<<<<<< cdfd12e044b8ddb133b12d731c6a5065b6cc0016
+=======
+
+>>>>>>> add the second third and forth homework
 require 'minitest/autorun'
 require './ruby4'
 

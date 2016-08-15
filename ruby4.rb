@@ -18,3 +18,8 @@ def getword(str, c)
   end
   result
 end
+<<<<<<< cdfd12e044b8ddb133b12d731c6a5065b6cc0016
+=======
+
+print getword("qewe rweg we aef akvw erge rg", 15)
+>>>>>>> add the second third and forth homework
