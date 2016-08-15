@@ -117,9 +117,3 @@ def num_str (num)
 
  return num2str
 end
-<<<<<<< HEAD
-=======
-
-
-puts num_str(1100000001)
->>>>>>> 13b0014
