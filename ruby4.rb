@@ -18,5 +18,3 @@ def getword(str, c)
   end
   result
 end
-
-print getword("qewe rweg we aef akvw erge rg", 15)

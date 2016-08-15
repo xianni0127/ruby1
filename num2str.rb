@@ -117,6 +117,3 @@ def num_str (num)
 
  return num2str
 end
-
-
-puts num_str(1100000001)
