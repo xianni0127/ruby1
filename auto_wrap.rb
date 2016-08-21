@@ -1,9 +1,8 @@
-
+class AutoWrap
 def getword(str, c)
   i=0
   leng=c
   strlength=str.split.length
-
   result = ""
   until str.split[i].nil? do
     if (leng-str.split[i].length-1) >= 0
@@ -17,4 +16,5 @@ def getword(str, c)
     end
   end
 return result
+end
 end

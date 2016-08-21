@@ -1,6 +1,10 @@
+require ('./exception.rb')
+class FizzBuzz
+
 def putssomething (fuz)
   result = ""
   fuz.each  do |fuz_data|
+    raise InvalidInputException, 'Please enter a number' unless fuz_data.to_s.is_numberic?
     if fuz_data.to_i % 3 ==0 && fuz_data.to_i % 5 ==0
         result += "FizzBuzz" + ' '
     elsif fuz_data.to_i % 3  ==0  or fuz_data.to_s.include?"3"
@@ -13,3 +17,4 @@ def putssomething (fuz)
   end
   return result
  end
+end

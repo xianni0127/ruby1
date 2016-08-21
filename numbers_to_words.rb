@@ -1,4 +1,5 @@
-
+require ('./exception.rb')
+class NumbersWords
   NUM_MAP = {
       0 => 'zero',
       1 => 'one',
@@ -96,6 +97,7 @@ def split_num(num)
   end
 
 def num_str (num)
+  raise InvalidInputException, 'Please enter a number' unless num.to_s.is_numberic?
   seg_map=0
   num2str=''
   if (num==0)
@@ -116,4 +118,5 @@ def num_str (num)
   end
 
  return num2str
+end
 end
