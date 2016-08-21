@@ -70,5 +70,9 @@ class TestNum2str <Minitest::Test
     assert_equal " one hundred twenty-three trillion four hundred fifty-six billion seven hundred eighty-nine million twelve thousand three hundred forty-five ", @numberswords.num_str(123456789012345)
   end
 
+   def test_invalid_num
+     exception = assert_raises(InvalidInputException){@numberswords.num_str('abc')}      
+     assert_equal('Please enter a number', exception.message)
+   end
 
 end

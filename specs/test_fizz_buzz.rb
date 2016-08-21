@@ -9,10 +9,18 @@ class TestExample <Minitest::Test
   def test_array_15
     assert_equal "1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz Fizz 14 FizzBuzz ", @fizzbuzz.putssomething(1..15)
   end
+
   def test_array_3
     assert_equal "1 2 Fizz ", @fizzbuzz.putssomething(1..3)
   end
+
   def test_array_5
     assert_equal "1 2 Fizz 4 Buzz ", @fizzbuzz.putssomething(1..5)
   end
+
+  def test_invalid_num
+    exception = assert_raises(InvalidInputException){@fizzbuzz.putssomething(['abc', 'b'])}
+    assert_equal('Please enter a number', exception.message)
+  end
+
 end
